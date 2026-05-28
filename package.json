@@ -1,0 +1,26 @@
+{
+  "name": "email-responder",
+  "version": "1.0.0",
+  "description": "The purpose of this application is to help users generate relevant responses to emails to save time",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chibunduekwunife/email-responder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chibunduekwunife/email-responder/issues"
+  },
+  "homepage": "https://github.com/chibunduekwunife/email-responder#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
