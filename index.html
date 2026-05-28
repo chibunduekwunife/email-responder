@@ -4,19 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Email Responder</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <label for="emailInput">Paste the email you received.</label>
-        <textarea id="emailInput"></textarea>
-        <label for="toneSelect">Select the tone of the response.</label>
-        <select id="toneSelect">
-            <option value="professional">Professional</option>
-            <option value="friendly">Friendly</option>
-            <option value="concise">Concise</option>
-        </select>
-        <button id="button" onclick="generateReply()">Generate reply</button>
-        <div id="output">
+        <div class="page">
+            <div class="container">
+                <label for="emailInput">Paste the email you received.</label>
+                <textarea id="emailInput"></textarea>
+                <label for="toneSelect">Select the tone of the response.</label>
+                <select id="toneSelect">
+                    <option value="professional">Professional</option>
+                    <option value="friendly">Friendly</option>
+                    <option value="concise">Concise</option>
+                </select>
+                <button id="button" onclick="generateReply()">Generate reply</button>
+            </div>
+            <div id="output" class="output">
 
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
