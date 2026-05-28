@@ -11,7 +11,8 @@ app.use(express.json())
 
 app.post("/generate", async (req, res) => {
     const {email, tone} = req.body
-    const data = await fetch(
+    try {
+        const data = await fetch(
         "https://api.anthropic.com/v1/messages",{
             method: "POST",
             headers: {
@@ -27,10 +28,15 @@ app.post("/generate", async (req, res) => {
                     content: `Write a reply to this email in a ${tone} tone: ${email}`
                 }]
             })
-        }
-    )
-    const response = await data.json()
-    res.json(response)
+        })
+
+        const response = await data.json()
+        res.json(response)
+
+    } catch (error) {
+
+    }
+    
 })
 
 app.listen(port, () => {
