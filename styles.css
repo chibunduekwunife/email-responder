@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 25px auto;
     padding: 40px 20px;
 }
 
@@ -42,6 +42,7 @@ button {
 button:hover {
     background-color: rgb(29, 29, 29);
     transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 button:disabled {
@@ -61,4 +62,32 @@ button:disabled {
     background-color: rgb(230, 230, 230);
     min-height: 150px;
     border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 6px 12px;
+}
+
+nav h1 {
+    font-size: larger;
+}
+
+nav a {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(167, 165, 165);
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav-links {
+
 }
